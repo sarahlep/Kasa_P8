@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.header nav ul {
+  display: flex;
+  margin-top: 2px;
+}
+
+.header nav ul li {
+  margin: 0 10px;
+  list-style: none;
+  margin-top: 20px;
+  color: black;
+}
+
+.header nav ul li a.active,
+.header nav ul li a.active:visited {
+  text-decoration: underline;
+}
+
+.header nav ul li a{
+  text-decoration: none; /* Ou tout autre style de soulignement */
+  color: black;
+}
+
+.img_logo {
+  width: 130px;
+  height: 50px;
+}
+
+.body_home {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .header nav ul li a {
+      text-transform: uppercase; /* Transforme le texte en majuscules */
+  }
+
+  .header {
+    padding: 0px;
+    padding-bottom: 5px;
+  }
+}

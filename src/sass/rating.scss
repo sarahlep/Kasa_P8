@@ -1,0 +1,18 @@
+.rating  {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.star.filled {
+  color: #FF6060; /* Couleur des étoiles remplies */
+}
+
+.star {
+  color: #d6d7da; /* Couleur des étoiles non remplies */
+}
+
+p {
+  position: relative;
+  left: 60px;
+  bottom: 40px;
+}
