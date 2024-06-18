@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
-import '../sass/rating.scss';
+
 
 function Rating({ rate }) {
   const stars = Array(5).fill(0).map((_, index) => (

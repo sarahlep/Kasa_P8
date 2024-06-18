@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from "prop-types";
 import { Link } from 'react-router-dom';
-import '../sass/logementcard.scss';
 
 const LogementCard = ({ logements }) => {
   // Fonction pour diviser les logements en groupes de trois

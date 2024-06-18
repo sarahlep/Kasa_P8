@@ -30,7 +30,7 @@ p{
   gap: 15px;
   grid-column: 1 / -1; 
   position: relative;
-  right: 630px;
+  right: 550px;
 
 }
 .tag{
@@ -83,6 +83,9 @@ p{
   font-size: x-large;
 }
 
+.titre-location {
+  margin-left: 75px;
+}
 @media (max-width: 768px) {
   h1 {
 bottom: 420px;
@@ -101,6 +104,7 @@ bottom: 150px;
   .tags {
 position: relative;
 bottom: 150px;
+right: -10px;
   }
 
   .details {
@@ -108,13 +112,43 @@ bottom: 150px;
   }
 
   .rating {
-    top: 0px;
-    right: 115px;
+    top: -6px;
+    right: 165px;
+    font-size: small;
   }
 
   .titre-logement {
-    bottom: 400px;
+    bottom: 450px;
     left: 20px;
+    font-weight: normal;
+    font-size: 25px;
 
   } 
+
+  .host {
+    right: 0px;
+  }
+
+  .titre-location {
+    position: relative;
+    bottom: 170px;
+    left: -60px;
+  }
+
+
+  .host-picture {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .host-name {
+    display: flex;
+    flex-direction: column; /* This ensures the name is on two separate lines */
+  }
+  
+  .host-first-name,
+  .host-last-name {
+    display: block;
+  }
 }

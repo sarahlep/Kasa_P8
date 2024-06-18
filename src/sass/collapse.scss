@@ -7,7 +7,6 @@
 }
 
 .collapse_item {
-  height: 54px;
   background-color: #FF6060;
   border-radius: 5px;
   text-align: center;
@@ -17,22 +16,31 @@
 
 .collapse {
   display: flex;
-  height: 54px;
   justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 20px;
+  height: 34px;
 }
 
 .collapse_title {
   font-size: 24px;
   font-weight: 700;
   color: #FFFFFF;
-  margin: auto 15px;
+}
+
+.collapse_content_div {
+  background-color: #F6F6F6;
+  border-radius: 0px 0px 5px 5px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  padding: 0 20px; /* Initially set padding to 0 to animate */
 }
 
 .collapse_content {
   font-size: 18px;
-  margin-top: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding: 20px 0; /* Padding will be animated */
   line-height: 1.5;
 }
 
@@ -40,7 +48,7 @@
   list-style-type: none;
   padding-left: 20px;
   font-size: 18px;
-  margin-top: 27px;
+  margin: 10px 0;
 }
 
 .collapse_list li {
@@ -50,8 +58,6 @@
 .arrow {
   width: 32px;
   height: 32px;
-  margin-right: 20px;
-  margin-top: 10px;
   transition: transform 0.5s;
 }
 
@@ -59,93 +65,65 @@
   transform: rotate(-180deg);
 }
 
-.collapse_content_div {
-  background-color: #F6F6F6;
-  border-radius: 0px 0px 5px 5px;
-  overflow: hidden;
-  z-index: 1;
-}
-
-/* Animation Collapse */
-
 .expand {
-  animation: fadeIn 0.6s ease forwards;
-}
-
-@keyframes fadeIn {
-  0% {
-      opacity: 0;
-      transform: translateY(-20%);
-  }
-
-  100% {
-      height: auto;
-      opacity: 1;
-      transform: translateY(0);
-  }
+  max-height: 500px; /* Adjust this value as needed */
+  padding: 10px 20px; /* Add padding when expanded */
 }
 
 .collapsed {
-  animation: fadeOut 0.6s ease forwards;
-}
-
-@keyframes fadeOut {
-  0% {
-      opacity: 1;
-      transform: translateY(0);
-  }
-
-  100% {
-      opacity: 1;
-      transform: translateY(-30%);
-      height: 0;
-  }
+  max-height: 0;
+  padding: 0 20px; /* Remove padding when collapsed */
 }
 
 @media (max-width: 1024px) {
   .collapse_item {
-      height: 45px;
+    height: 45px;
   }
 
   .arrow {
-      width: 25px;
-      height: 25px;
-      margin: 10px 10px;
+    width: 25px;
+    height: 25px;
+    margin: 10px 10px;
   }
 }
 
 @media (max-width: 768px) {
   .collapse_all {
-      width: 100%;
-      margin-bottom: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #F6F6F6;
+  }
+
+  .collapse {
+    padding: 0px;
   }
 
   .collapse_item {
-      height: 30px;
+    height: 30px;
   }
 
   .collapse_title {
-      font-size: 13px;
-      margin: 7px 10px 10px;
+    font-size: 13px;
+    margin: 7px 10px 10px;
   }
 
   .collapse_content {
-      font-size: 12px;
-      margin: 15px 20px;
+    font-size: 12px;
+    margin: 45px 20px;
   }
 
   .arrow {
-      width: 20px;
-      height: 20px;
-      margin: 5px 10px;
+    width: 20px;
+    height: 20px;
+    margin: 5px 10px;
   }
 
   .collapse_list {
-      font-size: 12px;
-      margin-top: 15px;
+    font-size: 12px;
+    margin-top: 15px;
   }
 
   .collapse_list li {
-      margin-bottom: 3px;
+    margin-bottom: 3px;
   }
 }

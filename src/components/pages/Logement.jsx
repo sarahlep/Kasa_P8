@@ -3,7 +3,6 @@ import Apparts from '../../data/logements.json';
 import { useState } from 'react';
 import Carrousel from '../../components/Carroussel'; 
 import Collapse from '../../components/Collapse';
-import '../../sass/logements.scss';
 import Rating from "../../components/Rating.jsx";
 import Tags from "../../components/Tags.jsx";
 
@@ -36,7 +35,7 @@ function Logement() {
       </div>
       <div className="rating">
       <Rating rate={logement.rating} /></div>
-      <p>{logement.location}</p>
+      <p className='titre-location'>{logement.location}</p>
       <div className="details">
       <div className="tags">
     {logement.tags.map(tag => (

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../sass/banner.scss'; // Importez les styles SCSS depuis le répertoire sass
+
 
 function Banner({ image, alt, text, withShadowAndDarken }) {
   // Ajout une ombre et assombrir l'image en fonction de la page (en utilisant la condition ternaire)

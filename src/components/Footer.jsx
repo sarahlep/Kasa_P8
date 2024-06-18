@@ -1,6 +1,6 @@
 import React from 'react';
 import logo_footer from '/src/assets/images/footer.png'; // Utilisation d'un chemin absolu
-import '../sass/footer.scss';
+
 
 function Footer() {
   return (

@@ -1,15 +1,20 @@
 .logement-container {
   background-color: #f2f2f2; /* Fond gris */
   padding: 20px; /* Espacement autour de la grille */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
 }
 
 .logement-group {
   display: flex;
-  justify-content: space-between; /* Espacement entre les logements */
+  justify-content: center; /* Espacement entre les logements */
+  margin-left: 30px;
 }
 
 .logement-card {
-  width: calc(33.33% - 10px); /* Largeur de chaque logement avec espace entre */
+  width: calc(43.33% - 10px); /* Largeur de chaque logement avec espace entre */
   margin-bottom: 20px; /* Espacement entre les lignes de logements */
   position: relative;
   filter: brightness(0.9);
@@ -27,10 +32,8 @@
   border-radius: 10px;
 }
 
-
-
 .logement-text {
-  display: flex;
+  display: block; /* Change de flex à block pour un comportement normal du texte */
   position: absolute;
   color: #FFFFFF;
   font-size: 18px;
@@ -39,15 +42,17 @@
   margin-bottom: 0px;
   margin-top: 0px;
   max-width: 300px;
+  white-space: normal; /* Permet l'enroulement du texte */
+  word-wrap: break-word; /* Permet la coupure des mots longs */
 }
 
 @media (max-width: 768px) {
+  .logement-group {
+    flex-direction: column;
+    margin-left: 0px;
+  }
 
-.logement-group {
-flex-direction: column;
-}
-
-.logement-img {
-  width: 280%;
-}
+  .logement-img {
+    width: 250%;
+  }
 }

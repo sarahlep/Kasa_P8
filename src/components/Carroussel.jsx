@@ -1,7 +1,7 @@
 import React from 'react';
 import FlecheGauche from '../assets/images/fleche-gauche.png';
 import FlecheDroite from '../assets/images/fleche-droite.png';
-import '../sass/carrousel.scss';
+
 
 function Carrousel({ pictures }) {
   const [currentIndex, setCurrentIndex] = React.useState(0);

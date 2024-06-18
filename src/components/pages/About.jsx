@@ -3,7 +3,7 @@ import Banner from "../../components/Banner";
 import bannerImage from "../../assets/images/banner_2.png";
 import Collapse from "../../components/Collapse.jsx";
 import { collapseTextAPropos } from "../../data/CollapseTable.jsx";
-import '../../sass/about.scss';
+
 
 const About = () => {
   return (
