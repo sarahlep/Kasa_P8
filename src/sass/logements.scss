@@ -12,9 +12,9 @@
 }
 
 .titre-logement {
-  position: absolute;
+  position: relative;
   color: #FF6060;
-  bottom: 200px;
+  top: 390px;
   left: 75px;
 }
 
@@ -30,7 +30,7 @@ p{
   gap: 15px;
   grid-column: 1 / -1; 
   position: relative;
-  right: 550px;
+  right: 400px;
 
 }
 .tag{
@@ -103,7 +103,7 @@ bottom: 150px;
 
   .tags {
 position: relative;
-bottom: 150px;
+bottom: 190px;
 right: -10px;
   }
 
@@ -112,13 +112,14 @@ right: -10px;
   }
 
   .rating {
-    top: -6px;
-    right: 165px;
+    top: -19px;
+    right: 160px;
     font-size: small;
   }
 
   .titre-logement {
-    bottom: 450px;
+    position: absolute;
+    bottom: 550px;
     left: 20px;
     font-weight: normal;
     font-size: 25px;
@@ -127,11 +128,12 @@ right: -10px;
 
   .host {
     right: 0px;
+    top: 0px;
   }
 
   .titre-location {
     position: relative;
-    bottom: 170px;
+    bottom: 194px;
     left: -60px;
   }
 

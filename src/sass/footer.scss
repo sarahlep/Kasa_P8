@@ -8,27 +8,30 @@
   justify-content: center;
   margin: 20px 0px -8px -8px;
   padding-right: 16px;
-  padding-bottom: 30px;
 }
 
 .footer_logo {
   display: flex;
-
-
+  margin-top: 66px;
+  width: 122px;
+  height: 40px;
 }
 
+.footer_text {
+  display: flex;
+  font-family: 'Montserrat';
+  color: #FFFFFF;
+  font-size: 24px;
+  margin-top: 40px;
+  text-align: center;
+}
 
 @media (max-width: 768px) {
   .footer_background {
-      margin-top: 550px;
+    margin-top: 0px;
   }
 
   .footer_text {
-      font-size: 12px;
-      margin: 15px 120px;
-  }
-
-  .footer_logo {
-    width: 390px;
+    font-size: 12px;
   }
 }

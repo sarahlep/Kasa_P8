@@ -1,7 +1,6 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import PropTypes from "prop-types";
 import arrow from '/src/assets/images/fleche.png';
-
 
 const Collapse = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,13 +9,6 @@ const Collapse = ({ title, content }) => {
   const switchCollapse = () => {
     setIsOpen(!isOpen);
   };
-
-  useEffect(() => {
-    if (contentRef.current) {
-      contentRef.current.style.maxHeight = isOpen ? `${contentRef.current.scrollHeight}px` : "0px";
-      contentRef.current.style.padding = isOpen ? "10px 20px" : "0 20px";
-    }
-  }, [isOpen]);
 
   return (
     <div className="collapse_all">
@@ -55,4 +47,6 @@ Collapse.propTypes = {
 };
 
 export default Collapse;
+
+
 
